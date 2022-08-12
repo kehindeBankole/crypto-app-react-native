@@ -53,7 +53,7 @@ function Market() {
                   )}
                   data={data}
                   contentContainerStyle={{ paddingHorizontal: ms(15), paddingBottom:20}}
-                  onEndReached={() => console.log(21)}
+               
                   renderItem={({ item }) => (
                     <View style={styles.coinSeenCard}>
                       <View

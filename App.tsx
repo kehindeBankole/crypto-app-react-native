@@ -1,4 +1,4 @@
-import { StyleSheet, View} from "react-native";
+import { StatusBar, StyleSheet, View} from "react-native";
 import * as SplashScreen from "expo-splash-screen";
 import { useCallback, useEffect, useState } from "react";
 import Navigation from "./components/Navigation";

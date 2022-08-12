@@ -22,7 +22,6 @@ export default function Portfolio() {
       <View style={styles.titleBox}>
         <Text style={styles.title}>My Portfolio</Text>
         <Pressable
-          onPress={() => console.log(12)}
           style={({ pressed }) => [
             {
               backgroundColor: pressed ? "rgb(210, 230, 255)" : "transparent",
@@ -34,7 +33,7 @@ export default function Portfolio() {
       </View>
       <View style={styles.content}>
         {isLoading ? (
-          <View style={{ flexDirection: "row" }}>
+          <View style={{ flexDirection: "row" , paddingHorizontal:ms(15)}}>
             <LinearGradient
               colors={["#4766F9", "#3653DD"]}
               style={styles.load}
@@ -131,7 +130,7 @@ export default function Portfolio() {
                 <Pressable
                   style={styles.coinSeenCard}
                   onPress={() =>
-                    navigation.navigate("About", { coin: item.name })
+                    navigation.navigate("About", { coin: item })
                   }
                 >
                   <View

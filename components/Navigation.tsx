@@ -64,7 +64,6 @@ export default function Navigation() {
     const value = await AsyncStorage.getItem("hasVisited");
     if (value !== null) {
       setIsFirstTime(value);
-      console.log(value);
     }
   }
   useEffect(() => {
