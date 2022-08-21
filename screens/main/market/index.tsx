@@ -16,11 +16,6 @@ import { useCoins } from "../../../data/coins";
 import { LinearGradient } from "expo-linear-gradient";
 import {
   LineChart,
-  BarChart,
-  PieChart,
-  ProgressChart,
-  ContributionGraph,
-  StackedBarChart,
 } from "react-native-chart-kit";
 import { memo } from "react";
 
@@ -121,6 +116,7 @@ function Market() {
                           }}
                           width={Dimensions.get("screen").width - 80}
                           height={220}
+                          bezier
                           chartConfig={{
                             backgroundGradientFrom: "red",
                             backgroundGradientFromOpacity: 0,
